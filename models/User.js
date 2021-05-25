@@ -1,7 +1,7 @@
 const { NativeError } = require('mongoose');
-const mongoose = require('mongoosr');
+const mongoose = require('mongoose');
 
-const userSchema = mondoose.Schema({
+const userSchema = mongoose.Schema({
     name:{
         type: String,
         maxlength: 50
@@ -28,7 +28,7 @@ const userSchema = mondoose.Schema({
         type: String
     },
     tokenExp:{
-        type: number
+        type: Number
     }
 });
 
