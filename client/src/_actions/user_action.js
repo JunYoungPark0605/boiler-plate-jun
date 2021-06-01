@@ -1,12 +1,11 @@
 import axios from 'axios';
-import { response } from 'express';
 import { LOGIN_USER } from './types';
 
 
 export function loginUser(dataToSubmit) {
 
     const request = axios.post('/api/users/login', dataToSubmit)
-        .then(resposen => response.data)
+        .then(resposen => resposen.data)
 
         return {
             type: LOGIN_USER,
